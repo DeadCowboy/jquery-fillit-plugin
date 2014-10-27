@@ -1,6 +1,6 @@
 /**
  * @title FillIt
- * @description 
+ * @description FillIt is a simple plugin for jQuery that proportionately fills a container element by sizing up the child element.
  * @version 0.0.1
  * @author Richard Nelson
  * @github https://github.com/DeadCowboy
