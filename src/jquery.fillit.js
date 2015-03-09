@@ -1,7 +1,7 @@
 /**
- * @title FillIt
- * @description FillIt is a simple plugin for jQuery that proportionately fills a container element by sizing up the child element.
- * @version 0.0.1
+ * @title Fillit
+ * @description Fillit is a simple plugin for jQuery that proportionately fills a container element by sizing up the child element.
+ * @version 0.0.2
  * @author Richard Nelson
  * @github https://github.com/DeadCowboy
  */
@@ -31,7 +31,7 @@
 				fillContainer( $elem, naturalWidth, naturalHeight );
 
 			// Get Natural Dimensions from Attributes
-			} else if ( $elem[0].naturalWidth && $elem[0].naturalHeight ) {
+			} else if ( $elem.is( "img" ) && $elem[0].naturalWidth && $elem[0].naturalHeight ) {
 
 				console.info( "Getting image dimensions from element attribute natural..." );
 
@@ -42,7 +42,7 @@
 				fillContainer( $elem, naturalWidth, naturalHeight );
 
 			// Get Natural Dimensions from Image
-			} else {
+			} else if ( $elem.is( "img" ) ) {
 
 				var img = new Image();
 
